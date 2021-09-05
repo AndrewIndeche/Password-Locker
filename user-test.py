@@ -12,3 +12,5 @@ Class TestUser(unitest.Testcase):
 def setUp(self):
     '''
     Set up method to run before each test cases.
+    '''
+    self.new_user = User ("Allan","Davis","Facebook")
