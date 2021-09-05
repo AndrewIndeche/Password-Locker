@@ -6,7 +6,7 @@
          <p>Date 3rd September 2021</p>
          <p>The project is an individual Project focusing on:</p>
       <ul>
-  <p. The repository contains a Password locker app that helps users manage their passwords on various platforms as well as generate new passwords on the same.</p>
+  <p> The repository contains a Password locker app that helps users manage their passwords on various platforms as well as generate new passwords on the same.</p>
      </div>
      </div>
          </ul>
