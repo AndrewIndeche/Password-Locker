@@ -4,8 +4,8 @@ class User:
 
     """
     Userlist= []  #Array of empty user list
-    def _init_(self,name,platform,password):
+    def _init_(self,name,site,password):
 
         self.name=name
-        self.platform=platform
+        self.site=site
         self.password=password
