@@ -24,13 +24,11 @@
      <ul>
      <li>MkDir</li>
      <li>Touch index.html,Read Me License</li>
-     <li>MkDir independent Project 3,CSS,Bookstrap,images</li>
-     <li>Touch index.html,styles.css,scripts.js,img files,Read Me License</li>  
+     <li>MkDir Password_Locker, 
      <li>Github repository creation and link</li>
      <li>Github push</li>
-     <li>Git hub live io site</li>
      <li>Github push to save changes</li>
-     <li>Git hub-click live site link to get to the io site</li>
+     <li>Fork to download locally then run 
     </ul>
      </div>
      </div>
@@ -38,4 +36,5 @@
    Copyright (c) 2021 Andrew Indeche
    By using and/or copying this project, or the license document from which this statement is linked, you (the licensee) agree that you have read, understood, and    will comply with conditions of use.
    View License information attached link
+   https://github.com/AndrewIndeche/Password-Locker/blob/master/LICENSE
    
