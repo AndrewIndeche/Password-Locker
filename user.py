@@ -4,4 +4,4 @@ Class that generates new usernames
 
 """
 
-pass
+def_init_(self,name,platform,password)
