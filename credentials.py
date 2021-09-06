@@ -27,6 +27,14 @@ class credentials:
             '''
           Credentials.credential_list.remove(self)
 
+       def generatePassword(stringLength=8):
+        '''
+        Method that generates a random password string of letters and digits and special characters
+        '''
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password) for i in range(stringLength))
+
+
       @classmethod
       def find_account(cls,account):
           '''
