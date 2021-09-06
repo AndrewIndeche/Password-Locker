@@ -1,5 +1,5 @@
 import pyperclip
-class credentials:
+class Credentials:
     '''
     class that generates instance of user credentials
     '''
@@ -40,21 +40,21 @@ class credentials:
           '''
           Method that searches for account
           '''
-          for Credential in cls.credential_list:
-              if Credential.account == account:
-                  return cred
+          for Credentials in cls.credential_list:
+              if Credentials.account == account:
+                  return Credentials
 
        @classmethod
        def credential_exists(cls,account):
            '''
            Method that checks if a credential exists
            '''
-           for Credential in cls.credential_list:
-               if Credential.account==account:
+           for Credentials in cls.credential_list:
+               if Credentials.account==account:
                     return True
             return False
         @classmethod
-        def display_credentials(cls)
+        def display_Credentials(cls)
             '''
             method that displays all Credentials
             '''
