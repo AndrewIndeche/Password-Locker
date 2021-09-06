@@ -69,7 +69,7 @@ class TestUser(unittest.Testcase):
         '''
 
         self.new_user.save_user()
-        test_user = User("Test","user") 
+        test_user = User("Test","user")
         test_user.save_user()
 
         user_exists = User.user_exist("0711223344")
