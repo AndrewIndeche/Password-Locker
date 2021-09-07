@@ -1,5 +1,6 @@
 from user import User
 from credentials import Credentials
+import random
 
 def create_user(name,password):
     '''
@@ -52,7 +53,7 @@ def main():
     print(f"Hello {name}.")
     print('\n')
     while True:
-            print("Use these short codes to walk around the interface : cl - create a new user login, sc -save credentials, da - display account,gp -generate password ,fu -find user, ex -exit the  interface")
+            print("Use these short codes to walk around the interface : cl - create a new user login, sc -save credentials, da - display account,gp -generate password , ex -exit the  interface")
             short_code = input().lower()
 
             if short_code == 'cl':
@@ -85,22 +86,6 @@ def main():
                     print(f"{account}New user{email}{password})saved")
 
 
-            elif short_code == 'fu':
-
-                            print("Enter the user details you want to search for")
-
-                            search_user = input()
-                            if find_user(search_):
-                                    search_user = find_user(search_user)
-                                    print(f"{account} {email}.....{password}")
-                                    print('-' * 20)
-
-
-                            else:
-                                    print('\n')
-                                    print("That contact does not exist")
-                                    print('\n')
-
 
             elif short_code == "da":
                             print("Here are your account details")
@@ -112,7 +97,7 @@ def main():
 
                             else:
                                     print('\n')
-                                    print("You dont seem to have any user details saved yet")
+                                    print("search again")
                                     print('\n')
 
             elif short_code == 'gp':
