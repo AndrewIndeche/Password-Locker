@@ -57,7 +57,7 @@ class Credentials:
             '''
             method that displays all Credentials
             '''
-            return credential_list
+            return cls.credential_list
 
     @classmethod
     def copy_password(cls,password):

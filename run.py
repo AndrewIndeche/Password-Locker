@@ -39,11 +39,11 @@ def find_user(user):
     '''
     return User.find_user(user)
 
-def display_credentials():
+def display_Credentials():
     '''
     Function that returns all the saved credentials
     '''
-    return Credentials.display_credentials()
+    return Credentials.display_Credentials()
 
 def main():
     print("Hello Welcome to Password Locker,Your Tool to Edit and Save User credentials and passwords!What is your name?.  :- )  ")
@@ -52,11 +52,11 @@ def main():
     print(f"Hello {name}.")
     print('\n')
     while True:
-            print("Use these short codes to walk around the interface : cu - create a new user profile, sc -save credentials, da - display account,gp -generate password fu -find user, ex -exit the  interface")
+            print("Use these short codes to walk around the interface : cl - create a new user login, sc -save credentials, da - display account,gp -generate password ,fu -find user, ex -exit the  interface")
             short_code = input().lower()
 
-            if short_code == 'cu':
-                    print("New testuser Initialization...")
+            if short_code == 'cl':
+                    print("New user Initialization...")
                     print(f"Done,{name}.Enter your Password")
 
                     print("Password")
@@ -65,10 +65,9 @@ def main():
 
                     save_user ( create_user(name,password))
                     print('\n')
-                    print(f"New user{user})created")
+                    print(f"New user{name} {password})created")
 
                     print("saving your details...")
-
 
             elif short_code == 'sc':
                     print('\n')
@@ -85,20 +84,6 @@ def main():
                     print('\n')
                     print(f"{account}New user{email}{password})saved")
 
-            elif short_code == "da":
-
-                    if display_credentials():
-                            print("Here are your account details")
-                            print("\n")
-
-                            for account in display_credentials():
-                                print(f"{account} {email} .....{password}")
-                                print('\n')
-
-                            else:
-                                    print('\n')
-                                    print("You dont seem to have any user details saved yet")
-                                    print('\n')
 
             elif short_code == 'fu':
 
@@ -107,13 +92,27 @@ def main():
                             search_user = input()
                             if find_user(search_):
                                     search_user = find_user(search_user)
-                                    print(f"{name} {user}.....{password}")
+                                    print(f"{account} {email}.....{password}")
                                     print('-' * 20)
 
 
                             else:
                                     print('\n')
                                     print("That contact does not exist")
+                                    print('\n')
+
+
+            elif short_code == "da":
+                            print("Here are your account details")
+                            print("\n")
+
+                            for credentials in display_Credentials():
+                                print(f"{credentials.account} {credentials.email} .....{credentials.password}")
+                                print('\n')
+
+                            else:
+                                    print('\n')
+                                    print("You dont seem to have any user details saved yet")
                                     print('\n')
 
             elif short_code == 'gp':
