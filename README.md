@@ -23,12 +23,12 @@
     <h1>Project Set-up Instructions</h1>
      <ul>
      <li>MkDir</li>
-     <li>Touch index.html,Read Me License</li>
+     <li>Touch all files,Read Me License</li>
      <li>MkDir Password_Locker, 
      <li>Github repository creation and link</li>
      <li>Github push</li>
      <li>Github push to save changes</li>
-     <li>Fork to download locally then run 
+     <li>Fork to download locally then run on python
     </ul>
      </div>
      </div>
