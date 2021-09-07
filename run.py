@@ -8,7 +8,7 @@ def create_user(name,password):
     new_user = User(name,password)
     return new_user
 
-def create_credentials(account, email, passlock):
+def create_credentials(account, email, password):
     '''
     method credentials details
     '''
@@ -52,31 +52,38 @@ def main():
     print(f"Hello {name}.")
     print('\n')
     while True:
-            print("Use these short codes to walk around the interface : cu - create a new user profile, da - display account,gp -generate password fu -find user, ex -exit the  interface")
+            print("Use these short codes to walk around the interface : cu - create a new user profile, sc -save credentials, da - display account,gp -generate password fu -find user, ex -exit the  interface")
             short_code = input().lower()
 
             if short_code == 'cu':
-                    print("New Account Initialization...")
+                    print("New testuser Initialization...")
                     print(f"Done,{name}.Enter your Password")
 
                     print("Password")
                     password=input()
-
+                    print("done")
 
                     save_user ( create_user(name,password))
                     print('\n')
-                    print(f"New Account{name})created")
+                    print(f"New user{user})created")
 
-                    print("Site that logs in you details")
+                    print("saving your details...")
 
+
+            elif short_code == 'sc':
+                    print('\n')
+                    print("enter your user account website")
                     account=input()
-                    print("email")
+                    print("enter your email")
 
                     email=input()
 
-                    save_user ( create_credentials(name,email,password))
+                    print("password?")
+                    password=input()
+
+                    save_credentials (create_credentials(account,email,password))
                     print('\n')
-                    print(f"New Account{name} {email}.....{password})created")
+                    print(f"{account}New user{email}{password})saved")
 
             elif short_code == "da":
 
@@ -85,7 +92,7 @@ def main():
                             print("\n")
 
                             for account in display_credentials():
-                                print(f"{name} {email} .....{password}")
+                                print(f"{account} {email} .....{password}")
                                 print('\n')
 
                             else:
@@ -134,5 +141,4 @@ def main():
         print ("Use these short codes to walk around the interface : cu - create a new user profile, da - display account,gp -generate password fu -find user, ex -exit the  interface")
 
 if __name__ == '__main__':
-
     main()
