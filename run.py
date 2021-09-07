@@ -53,7 +53,7 @@ def main():
     print(f"Hello {name}.")
     print('\n')
     while True:
-            print("Use these short codes to walk around the interface : cl - create a new user login, sc -save credentials, da - display account,gp -generate password , ex -exit the  interface")
+            print("Use these short codes to walk around the interface : cl - create a new user login, sc -create and save credentials, da - display account,gp -generate password , ex -exit the  interface")
             short_code = input().lower()
 
             if short_code == 'cl':
@@ -97,8 +97,9 @@ def main():
 
                             else:
                                     print('\n')
-                                    print("search again")
+                                    print("again..")
                                     print('\n')
+
 
             elif short_code == 'gp':
 
